@@ -1,12 +1,25 @@
-#FAZENDO DOWNLOAD DO INSTALADOR & INICIANDO A PRIMEIRA INSTALAÇÃO (USAR SOMENTE PARA PRIMEIRA INSTALAÇÃO):
-sudo apt install -y git && git clone https://github.com/plwdesign/instalador-club && sudo chmod -R 777 instalador-club && cd instalador-club && sudo ./install_primaria
+<h1 align="center">Multiconversa
 
-SUBSTITUIR ESSA URL PELA SUA: https://github.com/plwdesign/instalador-club
+## Vamos instalar?
 
-Se você renomear a pasta “instalador-club” você vai precisar alterar também o código.
+FAZENDO DOWNLOAD DO INSTALADOR & INICIANDO A PRIMEIRA INSTALAÇÃO (USAR SOMENTE PARA PRIMEIRA INSTALAÇÃO):
 
-Quando o auto instalador solicitar a url de download dos arquivos você precisará fornecer a url do seu repositório git que contém os arquivos da pasta “newclube-main”.
+```bash
+sudo apt install -y git && git clone https://github.com/brucalis/instalador-multi install && sudo chmod -R 777 ./install && cd ./install && sudo ./install_primaria
+```
+
+ACESSANDO DIRETORIO DO INSTALADOR & INICIANDO INSTALAÇÕES ADICIONAIS (USAR ESTE COMANDO PARA SEGUNDA OU MAIS INSTALAÇÃO:
+```bash
+cd && cd ./install && sudo ./install_instancia
+```
 
 
-#ACESSANDO DIRETORIO DO INSTALADOR & INICIANDO INSTALAÇÕES ADICIONAIS (USAR ESTE COMANDO PARA SEGUNDA OU MAIS INSTALAÇÃO:
-cd ./instalador-club && sudo ./install_instancia
+## Para Instalação você precisa:
+
+Uma VPS Ubuntu 20.04 (Configuração recomendada: 4 VCPU's + 8 GB RAM)
+
+Subdominio para Frontend - Seu frontend
+
+Subdominio para API -Seu backend
+
+
